@@ -11,7 +11,8 @@ const Form = (props)=> {
         setTodoList([
             ...todoList,{
             todoText: todoText,
-            id: Math.floor(Math.random()*10000).toString()
+            id: Math.floor(Math.random()*10000).toString(),
+            markedChecked: false
             }
         ])
         setTodoText("");
