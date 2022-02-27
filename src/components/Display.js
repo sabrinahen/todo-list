@@ -4,7 +4,9 @@ const Display = (props)=> {
 
     const {todoList, setTodoList} = props;
 
-
+    const deleteButton = (idFromBelow) =>{
+        todo
+    }
 
 
     return (
@@ -12,7 +14,8 @@ const Display = (props)=> {
             {
             todoList.map((todo, index)=>(
                 <div key={index}>
-                    <p>{todo}</p>
+                    <p>{todo.todoText}</p>
+                    <button onClick={()=> deleteButton(todo.id)}>Delete</button>
                 </div>
             ))
             }

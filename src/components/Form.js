@@ -9,10 +9,12 @@ const Form = (props)=> {
         e.preventDefault();
 
         setTodoList([
-            ...todoList,
-            todoText
+            ...todoList,{
+            todoText: todoText,
+            id: Math.floor(Math.random()*10000).toString()
+            }
         ])
-        setTodoText("")
+        setTodoText("");
     }
 
 
